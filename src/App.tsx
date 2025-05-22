@@ -10,6 +10,8 @@ import BrowseMeals from "./pages/BrowseMeals";
 import BecomeSeller from "./pages/BecomeSeller";
 import HowItWorks from "./pages/HowItWorks";
 import OurCooks from "./pages/OurCooks";
+import Login from "./pages/Login";
+import ApplyNow from "./pages/ApplyNow";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +27,8 @@ const App = () => (
           <Route path="/become-seller" element={<BecomeSeller />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/our-cooks" element={<OurCooks />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/apply-now" element={<ApplyNow />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Menu, X, ChefHat } from 'lucide-react';
+import { Menu, X, ChefHat, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -24,7 +24,13 @@ const Navbar: React.FC = () => {
           <Link to="/how-it-works" className="text-brown-600 hover:text-orange-500 font-medium">How It Works</Link>
           <Link to="/browse-meals" className="text-brown-600 hover:text-orange-500 font-medium">Browse Meals</Link>
           <Link to="/our-cooks" className="text-brown-600 hover:text-orange-500 font-medium">Our Cooks</Link>
-          <Link to="/become-seller">
+          <Link to="/login" className="text-brown-600 hover:text-orange-500 font-medium">
+            <div className="flex items-center">
+              <User className="h-5 w-5 mr-1" />
+              <span>Login</span>
+            </div>
+          </Link>
+          <Link to="/apply-now">
             <Button className="btn-primary">Become a Seller</Button>
           </Link>
         </div>
@@ -47,7 +53,13 @@ const Navbar: React.FC = () => {
             <Link to="/how-it-works" className="text-brown-600 hover:text-orange-500 font-medium px-4 py-2" onClick={() => setIsMenuOpen(false)}>How It Works</Link>
             <Link to="/browse-meals" className="text-brown-600 hover:text-orange-500 font-medium px-4 py-2" onClick={() => setIsMenuOpen(false)}>Browse Meals</Link>
             <Link to="/our-cooks" className="text-brown-600 hover:text-orange-500 font-medium px-4 py-2" onClick={() => setIsMenuOpen(false)}>Our Cooks</Link>
-            <Link to="/become-seller" onClick={() => setIsMenuOpen(false)}>
+            <Link to="/login" className="text-brown-600 hover:text-orange-500 font-medium px-4 py-2" onClick={() => setIsMenuOpen(false)}>
+              <div className="flex items-center">
+                <User className="h-5 w-5 mr-1" />
+                <span>Login</span>
+              </div>
+            </Link>
+            <Link to="/apply-now" onClick={() => setIsMenuOpen(false)}>
               <Button className="btn-primary w-full">Become a Seller</Button>
             </Link>
           </div>

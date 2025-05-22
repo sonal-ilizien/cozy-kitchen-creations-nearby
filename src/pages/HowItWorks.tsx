@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
-import { ShoppingCart, ChefHat, Star, ShieldCheck, Clock, Leaf, Info } from 'lucide-react';
+import { ShoppingCart, ChefHat, Star, ShieldCheck, Clock, Leaf, Info, Check } from 'lucide-react';
 
 const HowItWorks: React.FC = () => {
   const customerSteps = [

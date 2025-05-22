@@ -37,7 +37,7 @@ const MealCard: React.FC<MealCardProps> = ({
           className="w-full h-full object-cover"
         />
         <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full font-medium text-orange-500">
-          ${price.toFixed(2)}
+          ₹{price.toFixed(2)}
         </div>
       </div>
       
