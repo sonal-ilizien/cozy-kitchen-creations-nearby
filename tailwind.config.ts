@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,41 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        // Custom colors for our food platform
+        beige: {
+          50: '#F9F6F0',
+          100: '#F2E8DC',
+          200: '#E8D8C7',
+          300: '#D9C4A9',
+          400: '#C7AD8A',
+          500: '#B79570',
+        },
+        green: {
+          50: '#F0F5F0',
+          100: '#E0EBE0',
+          200: '#C7D8C6',
+          300: '#A5BEA3',
+          400: '#7E9E7C',
+          500: '#5D7E5B',
+        },
+        brown: {
+          50: '#F5F0E8',
+          100: '#E8D6C0',
+          200: '#D3B897',
+          300: '#B99A6E',
+          400: '#8B5A2B',
+          500: '#6D4622',
+          600: '#3D2B1F',
+        },
+        orange: {
+          100: '#FEF0E6',
+          200: '#FCDBC3',
+          300: '#F9C69F',
+          400: '#F6AE7A',
+          500: '#E86A33',
+          600: '#C74E1C',
+        },
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -89,7 +124,11 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+			},
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        display: ['Montserrat', 'sans-serif'],
+      }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
